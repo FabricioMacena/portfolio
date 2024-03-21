@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
+import AsideLeft from "./AsideLeft";
+import AsideRight from "./AsideRight";
+
+import { Main } from "./styles";
 
 export default function MainPage(){
     return(
-        <>
-            <h2>Página Inicial</h2>
-            <Link to="/datascience">To DataScience Page</Link>
-            <br />
-            <Link to="/development">To Development Page</Link>
-        </>
+        <Main>
+            <AsideLeft />
+            <AsideRight />
+        </Main>
     )
 }
