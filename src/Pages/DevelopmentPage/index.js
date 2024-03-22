@@ -1,7 +1,15 @@
+import TemplateProjs from "../../components/TemplateProjs"
+
 export default function DevelopmentPage(){
     return(
-        <>
-            <h2>Página de Desenvolvimento e Software</h2>
-        </>
+        <TemplateProjs 
+            values={{
+                title: "Desenvolvimento de Software",
+                colors: {
+                    primaryColor: "#F9BC21",
+                    secondaryColor: "#F97515"
+                } 
+            }}
+        />
     )
 }
