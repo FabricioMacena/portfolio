@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Análise de Colaboradores",
+        "description": "A análise utiliza um conjunto de dados de Recursos Humanos, criado pelos Drs. Rich Huebner e Carla Patalano. Esses dados públicos fornecem informações abrangentes sobre os colaboradores de uma empresa, constituindo a base fundamental desta análise.",
+        "pathAsset": "/videos/analisecolaboradores-mp4.mp4",
+        "link": "https://app.powerbi.com/view?r=eyJrIjoiZDA1NGUwODMtMTUzMy00YjkzLWFiZDgtNDkwMGYzNTQ3MWRmIiwidCI6IjljMmQzOTFlLWM1YjUtNGZiNi1hNThmLWIwZTMzZTljZDYwNiJ9"
+    },
+    {
+        "title": "Análise de Ecommerce",
+        "description": "O conjunto de dados utilizado nessa análise são dados públicos de referentes á pedidos feitos na Olist Store. O conjunto de dados contém informações de 100 mil pedidos de 2016 a 2018 feitos em vários marketplaces no Brasil.",
+        "pathAsset": "/videos/eccomerce-mp4.mp4",
+        "link": "https://app.powerbi.com/view?r=eyJrIjoiZGI3NzY2NTUtNjQwMy00ZmNlLTgxODEtMDY3NGNjODkwMWFlIiwidCI6IjljMmQzOTFlLWM1YjUtNGZiNi1hNThmLWIwZTMzZTljZDYwNiJ9&pageName=ReportSection"
+    },
+    {
+        "title": "Segmentação de Clientes",
+        "description": "A base de dados é referente á dados de clientes de uma compania de automóveis. O objetivo primordial consiste em desenvolver um algoritmo capaz de realizar agrupamentos matemáticos dos clientes com base em seus dados, visando uma análise eficiente e estratégica",
+        "pathAsset": "/imgs/customer_distribution.png",
+        "link": "https://github.com/FabricioMacena/Data_Science/blob/main/Customer%20Segmentation/customer_segmentation_intro.md"
+    }
+]

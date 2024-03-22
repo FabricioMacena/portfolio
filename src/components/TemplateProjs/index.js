@@ -11,9 +11,8 @@ export default function TemplateProjs({ values }){
             />
             <Projects
                 colors={values.colors}
-            >
-
-            </Projects>
+                data={values.data}
+            />
         </Template>
     )
 }
