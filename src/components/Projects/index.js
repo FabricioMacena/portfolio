@@ -21,7 +21,7 @@ export default function Projects({ colors, data }){
 
     return(
         <Container colors={colors}>
-            <Aside>
+            <Aside colors={colors}>
                 <div className="divSrc">
                     {currentProject.typeSrc === 'mp4' ? (
                         <video controls width="640" height="360" key={currentProject.id} className="srcAsset">
@@ -36,7 +36,7 @@ export default function Projects({ colors, data }){
                     <h1>{ currentProject.title }</h1>
                     <p>{ currentProject.description }</p>
                     <div className="links">
-                        <a href={currentProject.link} target="blank">Clique aqui para acessar o projeto</a>
+                        <a href={currentProject.link} target="blank">Acesse o projeto aqui</a>
                     </div>
                 </div>
             </Aside>
@@ -47,7 +47,7 @@ export default function Projects({ colors, data }){
                 </div>
                 <div className="badges">
                     {currentProject.badges.map((badge, index) => (
-                        <img src={Badges[badge]} alt={badge} key={index} />
+                        <img src={Badges[badge]} alt={badge} key={index} className="badge"/>
                     ))}
                 </div>
                 

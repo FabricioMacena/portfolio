@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-    height: 20%;
+    height: 15%;
     display: flex;
     flex-direction: row;
     align-items: center;

@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         color: #FFFFFF;
         font-family: 'Jura', sans-serif;
+        user-select: none;
     }
 
     body{

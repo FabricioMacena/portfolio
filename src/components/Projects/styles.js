@@ -42,6 +42,22 @@ export const Aside = styled.aside`
         line-height: 35px;
         height: 60%;
         font-size: 1.1rem;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar{
+            height: 10px;
+            width: 10px;
+        }
+
+        &::-webkit-scrollbar-track{
+            border-radius: 5px;
+            background-color: #ccc;
+        }
+
+        &::-webkit-scrollbar-thumb{
+            background-color: ${props => props.colors.secondaryColor};
+            border-radius: 5px;
+        }
     }
 
     .links{
@@ -49,17 +65,21 @@ export const Aside = styled.aside`
         justify-content: flex-end;
         align-items: center;
         flex-direction: row;
+        height: 20%;
     }
 
     .links a{
         text-decoration: none;
         font-weight: bold;
-        color: green;
         transition: .3s;
-
-        &:hover{
-            color: lightgreen;
-        }
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(
+            to right,
+            ${props => props.colors.primaryColor},
+            ${props => props.colors.secondaryColor}
+        );
     }
     
 `;
@@ -79,6 +99,10 @@ export const FooterProject = styled.aside`
     .badges{
         height: 60%;
         gap: 5px;
+    }
+
+    .badge{
+        opacity: 0.6;
     }
 
     span{
