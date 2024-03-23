@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container } from "./styles";
+import { Container, Aside } from "./styles";
 
 export default function Projects({ colors, data }){
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,28 +17,34 @@ export default function Projects({ colors, data }){
         setCurrentIndex(currentIndex - 1);
     }
 
-    console.log("../../assets" + currentProject.pathAsset);
-    console.log("../../assets/videos/analisecolaboradores-mp4.mp4");
-
     return(
         <Container colors={colors}>
-            <div>
-                {currentProject.pathAsset.endsWith('mp4') ? (
-                    <video controls width="640" height="360">
-                        <source src={`../../assets${currentProject.pathAsset}`} type="video/mp4" />
-                        Seu Navegador não suporta o vídeo
-                    </video>
-                ) : (
-                    <img src={`../../assets${currentProject.pathAsset}`} alt={currentProject.title} />
-                )}
+            <Aside>
+                <div>
+                    {currentProject.typeSrc === 'mp4' ? (
+                        <video controls width="640" height="360" key={currentProject.id} className="srcAsset">
+                            <source src={currentProject.src} type="video/mp4" />
+                            Seu Navegador não suporta o vídeo
+                        </video>
+                    ) : (
+                        <img src={currentProject.src} alt={currentProject.title} key={currentProject.id} className="srcAsset"/>
+                    )}
+                </div>
+                <div>
+                    <h1>{ currentProject.title }</h1>
+                    <p>{ currentProject.description }</p>
+                    <a href={currentProject.link} target="blank">Clique aqui para acessar o projeto</a>
+                </div>
+            </Aside>
+
+            <div className="btns">
+                {currentIndex > 0 && <button onClick={previousProject}>Anterior</button>}
+                {currentIndex < data.length - 1 && <button onClick={nextProject}>Próximo</button>}
             </div>
-            <div>
-                <h1>{ currentProject.title }</h1>
-                <p>{ currentProject.description }</p>
-                <a href={currentProject.link} target="blank">Clique aqui para acessar o projeto</a>
+
+            <div className="badges">
+                
             </div>
-            {currentIndex > 0 && <button onClick={previousProject}>Anterior</button>}
-            {currentIndex < data.length - 1 && <button onClick={nextProject}>Próximo</button>}
         </Container>
     )
 }

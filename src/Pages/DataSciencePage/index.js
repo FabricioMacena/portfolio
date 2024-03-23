@@ -1,6 +1,6 @@
 import TemplateProjs from "../../components/TemplateProjs"
 
-import dataProjects from "../../data/datascience.json";
+import { dataDS } from "../../data/datascience"
 
 export default function DataSciencePage(){
     return(
@@ -11,7 +11,7 @@ export default function DataSciencePage(){
                     primaryColor: "#00C2FF",
                     secondaryColor: "#4950EF"
                 },
-                data: dataProjects
+                data: dataDS
             }}
         />
     )

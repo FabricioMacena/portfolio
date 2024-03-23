@@ -1,6 +1,6 @@
 import TemplateProjs from "../../components/TemplateProjs"
 
-import dataProjects from "../../data/develpment.json";
+import { dataDEV } from "../../data/development"
 
 export default function DevelopmentPage(){
     return(
@@ -11,7 +11,7 @@ export default function DevelopmentPage(){
                     primaryColor: "#F9BC21",
                     secondaryColor: "#F97515"
                 },
-                data: dataProjects
+                data: dataDEV
             }}
         />
     )

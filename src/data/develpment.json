@@ -1,8 +1,0 @@
-[
-    {
-        "title": "Identificador De Imagens",
-        "description": "Essa aplicação feita em Flask consiste num sistema de reconhecimento de imagens de animais marinhos, com a utilização de Redes Neurais Convolucionais(CNN) através da biblioteca TensorFlow.",
-        "pathAsset": "/videos/recognizer-mp4.mp4",
-        "link": "https://github.com/FabricioMacena/image-recognizer"
-    }
-]
