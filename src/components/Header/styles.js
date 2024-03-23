@@ -9,6 +9,7 @@ export const Container = styled.header`
 `;
 
 export const Title = styled.h1`
+    font-family: 'Lato', 'Jura', sans-serif;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

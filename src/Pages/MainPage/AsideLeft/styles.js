@@ -6,6 +6,7 @@ export const Aside = styled.aside`
 
     #titleName{
         font-size: 1.8rem;
+        font-family: 'Lato', 'Jura', sans-serif;
     }
 
     #icons{
