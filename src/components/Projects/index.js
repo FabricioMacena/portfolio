@@ -43,7 +43,7 @@ export default function Projects({ colors, data }){
 
             <FooterProject colors={colors}>
                 <div>
-                    <span>Principais técnologias usadas</span>
+                    <span>Principais tecnologias usadas</span>
                 </div>
                 <div className="badges">
                     {currentProject.badges.map((badge, index) => (

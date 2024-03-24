@@ -35,18 +35,19 @@ export const Aside = styled.aside`
         font-size: 1.7rem;
         font-family: 'Lato', 'Jura', sans-serif;
         text-align: center;
-        height: 20%;
+        height: 30%;
     }
 
     .divAbout p{
         line-height: 35px;
-        height: 60%;
+        height: 55%;
         font-size: 1.1rem;
         overflow-y: auto;
+        padding-right: 30px;
 
         &::-webkit-scrollbar{
             height: 10px;
-            width: 10px;
+            width: 4px;
         }
 
         &::-webkit-scrollbar-track{
@@ -65,7 +66,7 @@ export const Aside = styled.aside`
         justify-content: flex-end;
         align-items: center;
         flex-direction: row;
-        height: 20%;
+        height: 15%;
     }
 
     .links a{
@@ -80,6 +81,13 @@ export const Aside = styled.aside`
             ${props => props.colors.primaryColor},
             ${props => props.colors.secondaryColor}
         );
+        
+        transition: .3s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
     }
     
 `;
@@ -129,5 +137,11 @@ export const FooterProject = styled.aside`
             ${props => props.colors.primaryColor},
             ${props => props.colors.secondaryColor}
         );
+
+        transition: 0.3s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 `;
